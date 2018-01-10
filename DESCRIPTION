@@ -1,0 +1,15 @@
+Package: TWAS
+Type: Package
+Title: Transcriptome-Wide Association Study Analysis 
+Version: 0.1.0
+Authors@R: c(person("Foulkes", "Andrea", email="afoulkes@mtholyoke.edu", role="aut"), person("Kulp", "David", email="dkulp@mtholyoke.edu", role="cre"))
+Description: TWAS provides an EM approach to transcriptome association analysis.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: MASS,
+    dplyr
+URL: http://github.com/dkulp2/TWAS
+BugReports: http://github.com/dkulp2/TWAS/issues
+RoxygenNote: 6.0.1
+Suggests: testthat
