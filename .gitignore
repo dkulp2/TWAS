@@ -3,3 +3,5 @@
 .RData
 .Ruserdata
 packrat/lib*/
+data_files
+orig
