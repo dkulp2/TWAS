@@ -59,7 +59,7 @@ pbar.update <- function(pbar, k, abs.diff, epsilon) {
       est.frac.done <- max(0, min(1,log(abs.diff)/log(epsilon)))  # bar shows exponent
       pbar$update(est.frac.done, tokens=list(k=k, eps=sprintf("%.03e",abs.diff)))
     } else {
-      cat("k=",k," of ",rounds,"\tepsilon: ",abs.diff," > ",epsilon,"\n")
+      cat("k=",k,"\tepsilon: ",abs.diff," > ",epsilon,"\n")
     }
   }
   invisible()
@@ -354,7 +354,7 @@ twas <- function(transcriptome,
 
   # display a progress bar, if available
   pbar <- pbar.create(show.progress)
-  pbar.update(pbar, k, abs.diff, epsilon)
+  pbar.update(pbar, 0, abs.diff, epsilon)
 
   while (k<=rounds && abs.diff>epsilon){
 
